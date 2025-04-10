@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Variables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <section class="sub-header">
+        <nav class="sub-nav">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo"></a>
+            <div class="sub-nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="introduction.html" class="nav-link">Introduction</a></li>
+                    <li><a href="variable.html" class="nav-link">Variable</a></li>
+                    <li><a href="datatypes.html" class="nav-link">Data Types</a></li>
+                    <li><a href="operators.html" class="nav-link">Operators</a></li>
+                    <li><a href="lists.html" class="nav-link">Lists</a></li>
+                    <li><a href="tuples.html" class="nav-link">Tuples</a></li>
+                    <li><a href="sets.html" class="nav-link">Sets</a></li>
+                    <li><a href="dictionaries.html" class="nav-link">Dictionaries</a></li>
+                    <li><a href="if-else.html" class="nav-link">if...else</a></li>
+                    <li><a href="while-loop.html" class="nav-link">While Loops</a></li>
+                    <li><a href="for-loop.html" class="nav-link">For Loops</a></li>
+                    <li><a href="functions.html" class="nav-link">Functions</a></li>
+                    <li><a href="lambda.html" class="nav-link">Lambda</a></li>
+                    <li><a href="class-object.html" class="nav-link">Class - Object</a></li>
+                    <li><a href="inheritance.html" class="nav-link">Inheritance</a></li>
+                    <li><a href="iterators.html" class="nav-link">Iterators</a></li>
+                    <li><a href="polymorphism.html" class="nav-link">Polymorphism</a></li>
+                    <li><a href="scope.html" class="nav-link">Scope</a></li>
+                    <li><a href="modules.html" class="nav-link">Modules</a></li>
+                    <li><a href="dates.html" class="nav-link">Dates</a></li>
+                    <li><a href="math.html" class="nav-link">Math</a></li>
+                    <li><a href="json.html" class="nav-link">JSON</a></li>
+                    <li><a href="regex.html" class="nav-link">RegEx</a></li>
+                    <li><a href="pip.html" class="nav-link">PIP</a></li>
+                    <li><a href="try_except.html" class="nav-link">Try Except</a></li>
+                    <li><a href="user-input.html" class="nav-link">User Input</a></li>
+                    <li><a href="stringformatting.html" class="nav-link">String Formatting</a></li>
+                </ul>
+            </div>
+            <div class="head-nav-links">
+                <a class="nav-link" href="index.html">Home</a></li>
+                <a class="nav-link" href="abot.html">About</a></li>
+                <a class="" href="#courses">Course</a></li>
+                <a class="nav-link" href="blog.html">Blog</a></li>
+                <a class="nav-link" href="contact.html">Contact</a></li>
+            </div>
+            <i class="fa-solid fa-bars" id="faBars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+    <div class="others">
+        <!-- -----------courses--------------- -->
+        <section class="course">
+            <h1>Python Variables</h1>
+            <br>
+            <hr><br>
+            <div class="con">
+
+                <h2>Basics of Python Variables :</h2>
+                <p>
+                    In Python, a variable is a symbolic name that refers to a value. Variables are used to store and
+                    manage
+                    data
+                    in
+                    your program. Here are some key points about Python variables:
+                </p>
+                <div class="sub-heading-con">
+                    <h3>Variable Assignment :</h3>
+                    <p class="p2">To create a variable, you use the assignment operator (<code>=</code>). The variable
+                        name is on the
+                        left, and the value to be stored in the variable is on the right. </p>
+                    <pre><code>age = 25
+name = "John"</code></pre>
+                </div>
+                <p class="p2"></p>
+                <div class="sub-heading-con">
+                    <h3>Variable Naming Rules :</h3>
+                    <p class="p2"> Variable names can contain letters, numbers, and underscores. They cannot start with
+                        a number.
+                        Python is case-sensitive. </p>
+                    <pre><code>my_variable = 42
+age1 = 30</code></pre>
+                </div>
+
+                <div class="sub-heading-con">
+                    <h3>Data Types:</h3>
+                    <p class="p2">Python is dynamically typed, meaning you don't need to declare the type of a variable
+                        explicitly.
+                        The interpreter infers the type based on the assigned value.</p>
+                    <pre><code>my_integer = 42
+my_float = 3.14
+my_string = "Hello, Python!"</code></pre>
+                </div>
+                <hr class="course-hr">
+
+                <h2>Advanced Concepts :</h2>
+
+                <div class="sub-heading-con">
+                    <h3>Dynamic Typing :</h3>
+                    <p class="p2">Python is dynamically typed, allowing you to reassign variables to different types.
+                    </p>
+                    <pre><code>age = 25
+age = "Twenty-Five"</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Multiple Assignments :</h3>
+                    <p class="p2">You can assign multiple variables in a single line.</p>
+                    <pre><code>x, y, z = 10, 20, 30</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Variable Swapping :</h3>
+                    <p class="p2">Python allows for a concise way to swap the values of variables.</p>
+                    <pre><code>a, b = 5, 10
+a, b = b, a</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Constants :</h3>
+                    <p class="p2">While Python doesn't have constants in the traditional sense, it is a convention to
+                        use uppercase
+                        names for variables that should be treated as constants</p>
+                    <pre><code>PI = 3.14159</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>None :</h3>
+                    <p class="p2">In Python, None is a special constant representing the absence of a value or a null
+                        value.</p>
+                    <pre><code>result = None</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Global vs. Local Variables :</h3>
+                    <p class="p2">Variables declared outside a function or a block are global, while those declared
+                        inside are local.
+                        Global variables can be accessed from any part of the code, but local variables are limited to
+                        their
+                        scope.</p>
+                    <pre><code>global_var = 10
+
+def my_function():
+    local_var = 5
+    print(global_var) </code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Variable Scope :</h3>
+                    <p class="p2">Python follows the LEGB (Local, Enclosing, Global, Built-in) rule when searching for
+                        the value of a variable.</p>
+                    <pre><code>x = 10
+
+def my_function():
+    x = 5
+    print(x)
+
+my_function()
+    print(x)</code></pre>
+                </div>
+                <div class="sub-heading-con">
+                    <h3>Mutable vs. Immutable Types :</h3>
+                    <p class="p2">Some data types in Python, like lists, dictionaries, and sets, are mutable, meaning
+                        their values can be changed. Others, like strings and tuples, are immutable.</p>
+                    <pre><code>mutable_list = [1, 2, 3]
+immutable_tuple = (1, 2, 3)
+
+mutable_list.append(4)</code>
+# Valid operation # immutable_tuple.append(4)  # This will raise an error</pre>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <hr class="custom-hr">
+        <!-- ----call to action---- -->
+        <section class="cta">
+            <h1>Enroll for our online Live course <br> Anywhere from the World !<br></h1>
+            <a href="" class="hero-btn">CONTACT US<a>
+        </section>
+        <hr class="custom-hr2">
+        <!-- ----Footer---- -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Connect Us !</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+        </section>
+        <hr class="custom-hline">
+
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var faBars = document.getElementById("faBars");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            faBars.style.display = "none";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            faBars.style.display = "block";
+        }
+    </script>
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // Get all links
+        const links = document.querySelectorAll('.nav-link');
+
+        // Remove 'active' class from all links
+        links.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Loop through each link and check if it matches the current path
+        links.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            if (linkPath === path) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

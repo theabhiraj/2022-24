@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stats-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.stats-card h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.stats-card p {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.chart-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.recent-activities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-lotteries, .recent-users {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.recent-lotteries h2, .recent-users h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.recent-lotteries table, .recent-users table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-lotteries th, .recent-users th, 
+.recent-lotteries td, .recent-users td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.recent-lotteries th, .recent-users th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.just {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    text-align: center;
+}
+
+.stats-title {
+    margin: 0;
+    color: #333;
+}
+
+.stats-number {
+    font-size: 2em;
+    margin: 10px 0 0;
+}
+
+.recent-lotteries {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.lotteries-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lotteries-table th,
+.lotteries-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.lotteries-table th {
+    background-color: #343a40;
+    color: #fff;
+} */

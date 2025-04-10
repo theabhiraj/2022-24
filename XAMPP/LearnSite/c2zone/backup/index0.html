@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles0.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <!--<div class="logo"><a href="#">ABR</a> </div> -->
+            <div class="logo">
+                <img src="C:\abhiraj\C2Zone\logo\logo-no-background.svg" alt="logo">
+            </div>
+
+            <div class="content-container">
+                <ul class="links">
+                    <li><a href="#" class="noa"> Home </a> </li>
+                    <li><a href="#" class="noa"> About </a></li>
+                    <li><a href="#" class="noa"> Service </a></li>
+                    <li><a href="#" class="noa"> Contact </a></li>
+                </ul>
+                <!---    <a href="#" class="action_btn"> Get Started </a> -->
+                <a href="#" class="action_btn"> Sign In </a>
+                <!--- <a href="#" class="action_btn"> Sign Up </a> --->
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <ul class="links">
+                <li><a href="home.html" class="noa"> Home </a> </li>
+                <li><a href="about.html" class="noa"> About </a></li>
+                <li><a href="service.html" class="noa"> Service </a></li>
+                <li><a href="contact.html" class="noa"> Contact </a></li>
+            </ul>
+            <!--    <li><a href="#" class="action_btn"> Get Started </a></li> -->
+            <a href="#" class="action_btn"> Sign In </a>
+            <!-- <a href="#" class="action_btn"> Sign Up </a> -->
+        </div>
+    </header>
+
+
+
+    <div class="courses-wrapper">
+        <div class="course">
+            <a href="courses/python/introduction.html">
+                <img src="course_img/python.svg" alt="Python Programming">
+                <h2>Python Programming Masterclass</h2>
+                <p>Unlock the power of Python for data science, web development, and more.</p>
+                <!--  <span class="level">Beginner-friendly</span> -->
+                <button>Start Learning</button> <!-- onclick="openCourse('courses/php.html')" -->
+            </a>
+        </div>
+
+        <div class="course">
+            <a href="#">
+                <img src="course_img/php.svg" alt="php programming">
+                <h2>PHP Programming</h2>
+                <p>Create stunning websites with PHP and elevate your web development skills.</p>
+                <!--  <span class="level">Intermediate</span>-->
+                <button>Start Learning</button>
+            </a>
+        </div>
+        <!--
+        <div class="course">
+            <a href="#">
+                <img src="course_img/course.svg" alt="HTML & CSS Essentials">
+                <h2>HTML & CSS Essentials</h2>
+                <p>Build beautiful and functional websites with the building blocks of web development.</p>
+                <! --  <span class="level">Intermediate</span>-- >
+                <button>Start Learning</button>
+            </a>
+        </div>
+        <div class="course">
+            <a href="#">
+                <img src="course_img/course.svg" alt="HTML & CSS Essentials">
+                <h2>HTML & CSS Essentials</h2>
+                <p>Build beautiful and functional websites with the building blocks of web development.</p>
+                <! --  <span class="level">Intermediate</span>-- >
+                <button>Start Learning</button>
+            </a>
+        </div>
+        <div class="course">
+            <a href="#">
+                <img src="course_img/course.svg" alt="JavaScript Crash Course">
+                <h2>JavaScript Crash Course</h2>
+                <p>Add interactivity and dynamic elements to your web pages with JavaScript.</p>
+                <!- -  <span class="level">Advanced</span>-- > 
+                <button>Start Learning</button>
+            </a>
+        </div>
+    -->
+    </div>
+
+
+
+
+
+
+    <!--
+    <div id="home" class="content-section">
+        <div id="about" class="content-section">
+
+            <h2>About Section</h2>
+            <p class="pas">This is the content for the About section.</p>
+        </div>
+
+        <div id="contact" class="content-section">
+
+            <h2>Contact Section</h2>
+            <p class="pas">This is the content for the Contact section.</p>
+        </div>
+
+        
+    </div>
+-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const toggleBtnIcon = document.querySelector('.toggle_btn i');
+            const dropDownMenu = document.querySelector('.dropdown_menu');
+
+            toggleBtnIcon.classList.add('fa-bars'); // Set the initial icon class
+
+            toggleBtn.addEventListener('click', function () {
+                dropDownMenu.classList.toggle('open');
+                const isOpen = dropDownMenu.classList.contains('open');
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars';
+            });
+        });
+
+    </script>
+    <!--
+    <script>
+        function openCourse(courses) {
+            // Redirect to the corresponding course.html based on the button clicked
+            window.location.href = courses;
+        }
+    </script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+#post-input {
+    width: 70%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+div {
+    max-width: 75%;
+    min-width: none;
+    max-height: auto;
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+
+}

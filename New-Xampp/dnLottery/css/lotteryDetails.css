@@ -1,0 +1,51 @@
+.lottery-details {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lottery-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.lottery-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    border-bottom: 2px solid #ddd;
+}
+
+.details-info {
+    text-align: center;
+}
+
+.details-info p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.participate-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.participate-button:hover {
+    background-color: #0056b3;
+}

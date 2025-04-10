@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-Nav</title>
+    <link rel="stylesheet" href="sub-nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav class="sub-nav">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo"></a>
+            <div class="sub-nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index-2.html" class="nav-link">Home</a></li>
+                    <li><a href="introduction.html" class="nav-link">Introduction</a></li>
+                    <li><a href="variable.html" class="nav-link">Variable</a></li>
+                    <li><a href="variable.html" class="nav-link">more</a></li>
+                    <li><a href="variable.html" class="nav-link">More</a></li>
+                    <li><a href="variable.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="head-nav-links">
+                <a class="nav-link" href="index-2.html">Home</a></li>
+                <a class="nav-link" href="abot.html">About</a></li>
+                <a class="" href="#courses">Course</a></li>
+                <a class="nav-link" href="blog.html">Blog</a></li>
+                <a class="nav-link" href="contact.html">Contact</a></li>
+            </div>
+            <i class="fa-solid fa-bars" id="faBars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var faBars = document.getElementById("faBars");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            faBars.style.display = "none";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            faBars.style.display = "block";
+        }
+    </script>
+
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // Get all links
+        const links = document.querySelectorAll('.sub-nav-links ul li a');
+
+        // Loop through each link and check if it matches the current path
+        links.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            if (linkPath === path) {
+                link.classList.add('active-link');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="abot.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </section>
+
+    <!-- ------Blog Page Content--------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="cert">
+                <h2>Our Certificates</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sed ipsum nobis omnis libero possimus optio maiores rerum deserunt mollitia dolor, quas quibusdam, eos voluptas culpa ut! Modi, iusto libero.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae officia debitis, reiciendis tenetur atque deleniti in aspernatur esse. Sed, magni delectus. Atque perspiciatis porro aut eos minus nemo animi.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae debitis libero quos iusto sed reprehenderit temporibus expedita voluptate fuga omnis, excepturi unde eveniet, ex impedit cupiditate accusantium dolorem ad cumque!</p>
+                
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name : ">
+                        <input type="email" placeholder="Enter E-Mail : ">
+                        <textarea rows="5" placeholder="comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn"> POST COMMENT </button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning </span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>More</span>
+                    <span>21</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----Footer---- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, et! Voluptate aliquid quisquam provident
+            itaque esse impedit laboriosam quibusdam sapiente earum, non reprehenderit dolorem repudiandae dolores,
+            maiores ullam qui veritatis?</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by C2Zone</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

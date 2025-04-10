@@ -1,0 +1,7 @@
+
+# HTID:22450105: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile "/storage/ssd4/408/21431408/public_html/partials/.htpasswd"
+Require user bgmitourney
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22450105:

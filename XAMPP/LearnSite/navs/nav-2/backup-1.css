@@ -1,0 +1,48 @@
+* Add these styles to your existing style.css or create a new stylesheet */
+
+.courses {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid #ffffff;
+    justify-content: space-between;
+}
+
+.course {
+    text-align: center;
+    width: calc(20% - 10px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    border: 0px solid #4b3d3d;
+    overflow: hidden;
+    position: relative;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Add a smooth transition effect for image */
+}
+
+.course h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.course:hover {
+    outline: 2px solid #3498db;
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.course:hover img {
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
+@media (max-width: 768px) {
+    .course {
+        width: calc(33.33% - 10px); /* Adjust the width for smaller screens */
+    }
+}

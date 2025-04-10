@@ -1,0 +1,115 @@
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    /* Adjusted font sizes for smaller screens */
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+}
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff; /* Changed text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding: 80px 0;
+    position: relative;
+
+    /* Background overlay */
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.1); /* Adjusted background overlay color and opacity */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px; /* Adjusted top padding for better spacing */
+    padding-bottom: 80px; /* Adjusted bottom padding for better spacing */
+}
+
+.hero h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 30px; /* Adjusted font size for hero heading */
+    color: red; /* Maintained red color for hero heading */
+    margin: 0;
+}
+
+.hero p {
+    font-weight: 500;
+    font-family: cursive;
+    color: #b8aeae;
+    font-size: 16px; /* Adjusted font size for hero paragraph */
+    margin-bottom: 20px; /* Added bottom margin for better spacing */
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 1px solid #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+    margin-bottom: 20px; /* Added bottom margin for better spacing between cards */
+}
+
+.card-title {
+    color: #fff; /* Changed card title color to white for better contrast */
+    font-size: 18px; /* Adjusted font size for card title */
+}
+
+.card-text {
+    color: #b8aeae; /* Adjusted card text color */
+    font-size: 14px; /* Adjusted font size for card text */
+}
+
+.register-link {
+    background: #0056b3;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjusted padding for better button appearance */
+    transition: background-color 0.3s; /* Added smooth transition for button hover */
+}
+
+.register-link:hover {
+    background-color: #004080; /* Darker background color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0; /* Adjusted top and bottom padding for footer */
+}
+
+.fcontainer {
+    max-width: 100%;
+    padding: 5px;
+}
+
+.guide {
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 10px 0; /* Adjusted top and bottom padding for guide */
+    margin: 0;
+}

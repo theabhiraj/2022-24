@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIN Badge</title>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <style>
+        .overall {
+            max-width: 95%;
+            padding: 10px;
+            /* Padding inside the border */
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            /* Gradient for the border */
+            border-radius: 10px;
+            /* Optional: Makes the corners rounded */
+            position: relative;
+        }
+
+        .overall::before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: white;
+            /* Background color inside the border */
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        .oneTCard {
+            display: flex;
+            flex-direction: column;
+            /* gap: 30px; */
+            /* Space between each heading and badges set */
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            /* Center the heading */
+            margin-bottom: auto
+                /* Space between heading and badges */
+        }
+
+        .itemCard2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+            /* 
+            padding-left: auto;
+            padding-right: 10px; */
+        }
+
+        .itemCard2>div {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 8px;
+            justify-content: center;
+            text-align: center;
+
+            padding: auto;
+            place-items: calc(center, center);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overall">
+        <div class="oneTCard">
+
+            <!-- <h1 class="itemHeading">Small</h1> -->
+            <div class="itemCard2">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+                    data-type="VERTICAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                    data-type="VERTICAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+            </div>
+        </div>
+        <div class="oneTCard">
+
+            <!-- <h1 class="itemHeading">Medium</h1> -->
+            <div class="itemCard2">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+                    data-type="HORIZONTAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                    data-type="HORIZONTAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+            </div>
+        </div>
+        <div class="oneTCard">
+
+            <!-- <h1 class="itemHeading">Large</h1> -->
+            <div class="itemCard2">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+                    data-type="VERTICAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
+                    data-type="VERTICAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+            </div>
+        </div>
+        <div class="oneTCard">
+            <!-- <h1 class="itemHeading">Extra-Large</h1> -->
+            <div class="itemCard2">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+                    data-type="HORIZONTAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
+                    data-type="HORIZONTAL" data-vanity="theabhiraj" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/theabhiraj?trk=profile-badge"></a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

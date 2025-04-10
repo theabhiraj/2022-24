@@ -1,0 +1,77 @@
+/*Drop_down_menu*/
+.brands {
+    position: absolute;
+    display: none;
+    list-style-type: none;
+}
+#drop_down_menu_1 {
+    z-index: 10;
+    position: fixed;
+    bottom: 18px;
+    top: -24px;
+    left: -20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background-color:aliceblue;
+    border-bottom: 5px outset black;
+    border-left: 5px outset black;
+    border-right: 5px outset black;
+    width: 55%;
+    border-bottom-right-radius: 100%;
+}
+#drop_down_menu_1 > li {
+    display: inline-block;
+    margin-left: 3%;
+    color:black;
+    font-weight: 800;
+    cursor: pointer;
+    /*border: 5px solid black;*/
+    height: 60px;
+}
+nav > #drop_down_menu_1 {
+    height: 30px;
+    font-size: x-large;
+}
+.brands > li {
+    color: black;
+    border: 2px solid black;
+    background-color:azure;
+    width: 120px;
+    height: 27px;
+    font-size: 25px;
+    padding: 5px;
+}
+li > .brands {
+    left: 9%;
+    display: none;
+    top: 70px;
+    position: absolute;
+    list-style-type: none;
+}    
+li:hover > .brands, li:hover > .phone, li:hover > .info {
+    display: block;
+}
+.info, .phone {
+    position: absolute;
+    display: none;
+}
+.info {
+    left: 25%;
+    background-color:aliceblue;
+    border: 2px solid black;
+    top: 70px;
+    padding: 0%;
+}
+.phone {
+    left: 38%;
+    background-color:aliceblue;
+    border: 2px solid black;
+    top: 70px;
+    padding: 0.2%;
+}
+.brands > li:hover, .info > i:hover, .phone > i:hover {
+    background-color: antiquewhite;
+}
+
+
+

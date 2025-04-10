@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Addition</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e2e2e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 12px 25px;
+            margin: 12px 8px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="button"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .error {
+            color: #f44336;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number Addition</h1>
+        <form id="additionForm">
+            <input type="text" id="numbers" name="numbers" placeholder="e.g., 10 + 20, 30 - 10 _ 40 or 10i10i10" required>
+            <br>
+            <input type="submit" value="Calculate Sum">
+            <input type="button" value="Clear" onclick="document.getElementById('numbers').value=''; document.getElementById('result').innerHTML=''; document.getElementById('error').innerHTML='';">
+        </form>
+        <h2 id="result"></h2>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script>
+        document.getElementById('additionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let input = document.getElementById('numbers').value.trim();
+            let resultElement = document.getElementById('result');
+            let errorElement = document.getElementById('error');
+
+            // Clear previous results
+            resultElement.innerHTML = '';
+            errorElement.innerHTML = '';
+
+            if (!input) {
+                errorElement.innerHTML = 'Please enter some numbers.';
+                return;
+            }
+
+            // Replace non-numeric characters (except delimiters) with spaces
+            let cleanedInput = input.replace(/[^0-9,\s\+\-_]+/g, ' ');
+
+            // Replace delimiters (commas, whitespace, plus signs, minus signs, underscore signs) with plus signs
+            cleanedInput = cleanedInput.replace(/[,\s\+\-_]+/g, '+');
+
+            // Remove any trailing plus signs or spaces
+            cleanedInput = cleanedInput.replace(/[+\s]+$/, '');
+
+            // Convert to an array of numbers
+            let numbersArray = cleanedInput.split(/\s*\+\s*/);
+
+            // Validate if all elements are numbers
+            if (numbersArray.some(num => isNaN(num))) {
+                errorElement.innerHTML = 'Invalid input detected. Please enter valid numbers.';
+                return;
+            }
+
+            // Calculate the sum
+            let sum = numbersArray.reduce((acc, num) => acc + parseFloat(num), 0);
+
+            // Display the sum
+            resultElement.innerHTML = `The sum is: ${sum}`;
+        });
+    </script>
+</body>
+
+</html>

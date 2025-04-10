@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.dashboard-title {
+    margin: 0;
+}
+
+.logout-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.stats-title {
+    margin: 0;
+    color: #333;
+}
+
+.stats-number {
+    font-size: 2em;
+    margin: 10px 0 0;
+}
+
+.recent-activities {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.lotteries-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lotteries-table th,
+.lotteries-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.lotteries-table th {
+    background-color: #343a40;
+    color: #fff;
+}

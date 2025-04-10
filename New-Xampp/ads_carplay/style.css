@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --color1: #1d7de4;
+  --color2: #7bedfc;
+  --color3: rgb(255, 255, 255);
+  --color4: #8a6868;
+  --color5: #f8a4af;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 30%;
+  margin: 0 !important;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color4);
+  margin: 0 !important;
+  padding: 0 0 1px 10px;
+}
+
+header-icon img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  animation: headericon 5s infinite;
+}
+
+@keyframes headericon {
+  0% {
+    left: 20%;
+  }
+
+  50% {
+    left: 25%;
+  }
+
+  100% {
+    left: 20%;
+  }
+}
+
+.navbar a {
+  margin: 0.6rem;
+  color: var(--color3);
+  font-size: 1.7rem;
+  position: relative;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: var(--color3);
+}
+
+.navbar a::after {
+  width: 0;
+  height: 4px;
+  position: absolute;
+  content: "";
+  background-color: var(--color3);
+  left: 0;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icons i {
+  font-size: 2.5rem;
+  color: var(--color4);
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.header-icons i:hover {
+  color: var(--color3);
+  cursor: pointer;
+}
+
+#bar {
+  font-size: 2.5rem;
+  color: var(--color4);
+  margin-left: 1rem;
+  display: none;
+}
+
+#bar:hover {
+  color: var(--color3);
+}
+
+/* Media Queries */
+@media (max-width:768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  #bar {
+    display: initial;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--color4);
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width:295px) {
+  .brand-name {
+    font-size: 175%;
+  }
+
+  .header-icons i {
+    display: none;
+  }
+}
+
+@media (max-width:200px) {
+  .brand .logo {
+    display: none;
+  }
+
+  .brand-name {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
+/* ------  FOOTER ------ */
+
+.footer {
+  background-color: #000000;
+  color: #ff0000;
+  text-align: center;
+  padding: 10px 0;
+  /* padding: 10%; */
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+
+
+/* ----- Hero Section ------ */
+.heroSection {
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: auto;
+  height: 100vh;
+  
+}
+
+.heroSub {
+  display: flex;
+  background-color: #e5ff00;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.mainLeftCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ff4c;
+  height: 90%;
+  width: 45%;
+}
+
+.mainRightCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c3ff;
+  height: 90%;
+  width: 45%;
+}
+
+.leftCont,
+.rightCont {
+  background-color: #ff00ff;
+  /* border: 5px solid #000000; */
+  height: 90%;
+  width: 90%;
+}

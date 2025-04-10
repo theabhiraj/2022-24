@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  

@@ -1,0 +1,9 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(90deg, white, darkgrey, grey, rgb(51, 51, 51));
+}
+
+button, section {
+    margin-top: 3%;
+    margin-left: 2%;
+}

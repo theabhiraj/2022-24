@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tournament 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #f1f1f1;
+            font-size: 15px;
+            font-weight: lighter;
+            margin: 1px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            /*   align-items: center;
+            text-align: center; */
+        }
+
+        .container {
+            align-items: center;
+            text-align: center;
+            max-width: 2000px;
+            margin: 10px;
+            padding: 0px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            text-align: center;
+            border: #007BFF;
+        }
+
+        .register-link {
+            display: inline;
+            text-align: center;
+            background: #007BFF;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .payment-options {
+            display: none;
+            padding: 5px;
+        }
+
+        .bordered-image {
+            border: 1px solid #ffffff;
+            border-radius: 25px;
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        .whatsappLink {
+            display: inline;
+            text-align: center;
+            background: #25d366;
+            color: #000000;
+            font-weight: bolder;
+            padding: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            border-radius: 1px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            /* Add custom space (adjust the value to your preference) */
+        }
+
+        p strong {
+            margin-right: 2px;
+            /* Add space to the right of <strong> text (adjust the value as needed) */
+        }
+
+        .qr-code-container {
+            background-color: #ffffff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.5);
+            width: 200px;
+            height: 200px;
+        }
+
+        .qr-code-container img {
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 100;
+            padding: 0;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: 100;
+            padding-top: 0%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--  <main>  -->
+    <div class="container">
+        <img src="img/AppIcons.jpg" alt="Tournament 1" class="bordered-image">
+        <h3>Tournament 1 : Price 1,000 ₹ Prize Pool : 6,640 ₹ inc. tax</h3>
+        <h5>Date: 2023-10-22 Time: 12:00 PM</h5><br>
+        <a class="register-link" href="qrcode4.html" >Register Now</a>
+        <!-- <a class="register-link" onclick="togglePaymentOptions()">Register Now</a>
+        <div class="qr-code-container payment-options container">
+            <img src="scan.png" alt="QR Code">
+        </div> -->
+
+    </div>
+    <p><strong>Registration :</strong>
+        To participate in this tournament, click the <strong class="p">"Register Now"</strong> button on site. Make sure
+        to
+        complete your registration before the specified date and time to secure your spot.</p>
+
+    <p><strong>Schedule : </strong>
+        October 22, 2023, starting at sharp <strong>12:00 PM</strong>. Make sure to log in and be ready to compete at
+        the specified time.</p>
+
+    <p><strong>Fair Play :</strong>
+        All participants are expected to exhibit fair play and good sportsmanship. Cheating, exploiting, or any form of
+        unfair play will result in disqualification.</p>
+
+    <p><strong>Results and Prizes :</strong>
+        Tournament results, prize, and any other post-tournament information will be communicated on WhatsApp. Winners
+        will be rewarded with their respective prize shares.</p>
+
+    <p>Rules for Playing :</p>
+    <ol>
+        <li>Don't use any AUTO Guns and any other weapons except <strong>KAR98 and M24</strong>.</li>
+        <li>Don't GRENADE or STUNT GRENADE.</li>
+        <li>- - - - -</li>
+    </ol>
+    <p><strong>Contact : </strong>For updates and any queries or assistance, click to
+    <p><a href="whatsapp://wa.me/message/9309814804" class="whatsappLink" target="_blank">Message Now</a>.</p>
+    </p>
+    <!--  </main> -->
+    <script>
+        function togglePaymentOptions() {
+            var paymentOptions = document.querySelector('.payment-options');
+            if (paymentOptions.style.display === 'none') {
+                paymentOptions.style.display = 'block';
+            } else {
+                paymentOptions.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

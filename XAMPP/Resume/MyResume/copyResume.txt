@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Abhiraj Bharat Rathod - Curriculum Vitae</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="copy.jpg" alt="Abhiraj Bharat Rathod" class="photo">
+        <div class="details">
+            <h1>Abhiraj Bharat Rathod</h1>
+            <p>At. Poitanda, Talwada-Georai, Dist. Beed - 431122 </p>
+            <p>Contact: (+91) 9309814804 | Email: <a href="mailto:theabhiraj.in@gmail.com">theabhiraj.in@gmail.com</a>
+            </p>
+            <p>Linkedin : <a href="https://www.linkedin.com/in/theabhiraj">https://www.linkedin.com/in/theabhiraj</a>
+            </p>
+        </div>
+    </header>
+    <p class="summary">Summary : Tech enthusiast with expertise in programming, data science, AI, and cybersecurity.
+        Proven adaptability, teamwork, and problem-solving skills. Eager to contribute to innovative projects</p>
+
+
+    <section>
+        <h2>Skills : </h2>
+        <p class="summary">Proficient in C, C++, PHP, Java, Swift, Python, C#, SQL and HTML. Familiar with concepts in ML,
+            DL, NLP, CV, Git, Scrum.</p>
+    </section>
+
+    <section>
+        <h2>Certificates : </h2>
+        <h3>Cyber Security : </h3>
+        <ul>
+
+            <li><span class="rectangle"></span><span style="color: red;"> CS50's Introduction to Cyber
+                    Security,</span>Harvard </li>
+            <li><span class="rectangle"></span>Introduction to Information Security, GreatLearning </li>
+
+        </ul>
+        <h3>AI & Data Science Skillset : </h3>
+        <ul>
+
+            <li><span class="rectangle"></span>Machine Learning, SimpliLearn </li>
+            <li><span class="rectangle"></span>Python Programming, SimpliLearn </li>
+            <li><span class="rectangle"></span>Introduction to Artificial Intelligence, Infosys (Springboard) </li>
+            <li><span class="rectangle"></span>Introduction to Deep Learning, Infosys (Springboard) </li>
+            <li><span class="rectangle"></span>Computer Vision 101, Infosys (Springboard)</li>
+            <li><span class="rectangle"></span>Introduction to Natural Language Processing, Infosys (Springboard) </li>
+            <li><span class="rectangle"></span>Introduction to SQL, SimpliLearn</li>
+            <li><span class="rectangle"></span>SQL for Data Science, GreatLearning</li>
+            <li><span class="rectangle"></span>Introduction to Responsible AI, Google Cloud - SimpliLearn</li>
+            <li><span class="rectangle"></span>Introduction to Generative AI Studio, Google Cloud - SimpliLearn</li>
+            <li><span class="rectangle"></span>Create Image Captioning Models, Google Cloud - SimpliLearn </li>
+            <li><span class="rectangle"></span>Introduction to Large Language Models, Google Cloud - SimpliLearn</li>
+            <li><span class="rectangle"></span>Introduction to Image Generation, Google Cloud - SimpliLearn</li>
+        </ul>
+
+        <h3>Programming and Development : </h3>
+        <ul>
+            <li><span class="rectangle"></span>Python Programming, [ Udemy, GL, SimpliLearn ]</li>
+            <li><span class="rectangle"></span>Java for Beginners, Infosys (Springboard) and SoloLearn </li>
+            <li><span class="rectangle"></span>Swift for Beginners, Infosys (Springboard) </li>
+            <li><span class="rectangle"></span>Android Application Development, GreatLearning </li>
+            <li><span class="rectangle"></span>C#, GreatLearning </li>
+            <li><span class="rectangle"></span>HTML, GreatLearning</li>
+            <li><span class="rectangle"></span>Data Structures in C, GreatLearning</li>
+            <li><span class="rectangle"></span>C Programming, LearnVern, GreatLearning</li>
+            <li><span class="rectangle"></span>C++ Programming, GreatLearning</li>
+            <li><span class="rectangle"></span>Flutter, SimpliLearn and GreatLearning</li>
+            <li><span class="rectangle"></span>Git Tutorial, GreatLearning</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>Projects :</h2>
+        <ul class="paddingmargin">
+            <li>
+                <h3>Programming Language HTML, CSS, JavaScript : </h3>
+                <p class="padding" ><strong>Calculator, To-Do WebApp, Authentication System : </strong></p><p class="margin"> In BHARAT Intern Program I
+                    created A Basic
+                    calculator, A basic TO-DO WebApp, Authentication System using HTML, CSS and Javascript with all
+                    required functionality.</p>
+            </li>
+            <li>
+                <h3>Technology used PHP, SQL, Python, HTML, CSS, JavaScript, API, Bootstrap :</h3>
+                <p class="padding" ><strong> Tournament WebSite : </strong></p><p class="margin">A Tournament website which organises tournaments and lets
+                    players connect with each other and Enjoy playing tournaments. I created a site using html, css,
+                    javascript, PHP, MySQL,
+                    PYTHON and Integrated with various Payment GATEWAYS (Google Pay, PhonePE, Razorpay ).</p>
+                <p class="padding" ><strong>Shop Management WebApp : </strong></p><p class="margin">A versatile Shop Management WebApp designed to streamline
+                    item addition and
+                    calculation for shopkeepers. This robust tool offers a glimpse into past transactions, item history,
+                    and more. Developed using HTML, CSS, JavaScript, PHP, MySQL, and Python, with seamless Integration
+                    of popular payment gateways (Google Pay, PhonePE, Razorpay).</p>
+                <p class="padding" ><strong>Jewellery WebSite :</strong></p><p class="margin">Experience exquisite jewellery shopping on our site, crafted with
+                    PHP, SQL, Python, HTML, CSS, JavaScript, and Bootstrap. Discover a curated selection, detailed
+                    product descriptions, and seamless navigation for a luxurious shopping experience.</p>
+                <p class="padding" ><strong>e-Learning website :</strong></p><p class="margin"> Dive into dynamic online education with our platform, merging
+                    PHP, SQL, Python, HTML, CSS, JavaScript, and APIs. Access personalized courses, live sessions, and
+                    progress tracking for an engaging learning journey.</p>
+                <p class="padding" ><strong>IT Class website :</strong></p><p class="margin">Explore IT education effortlessly with our site, powered by PHP,
+                    SQL, Python, HTML, CSS, JavaScript, and Bootstrap. Access expert-led courses, interactive tutorials,
+                    and hands-on projects for skill enhancement.</p>
+            </li>
+
+        </ul>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li><span class="rectangle"></span>BCS - Rajarshi Shahu Mahavidyalaya, Latur - NA% - 2022 - 2025</li>
+            <li><span class="rectangle"></span><span style="color: red;">B.Voc Cyber Sec-Fore </span>- B.K.Birla
+                College, Kalyan - NA% - 2021</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Seminar and Workshop : </h2>
+        <p>These certificates provided based on TEST results : </p>
+        <ul>
+            <li><span class="rectangle"></span>Introduction to Computers,<span style="color: brown;" > IIT Bombay </span> </li>
+            <li><span class="rectangle"></span>C Programming,<span style="color: brown;" > IIT Bombay </span> </li>
+            <li><span class="rectangle"></span>Python 3.4.3,<span style="color: brown;" > IIT Bombay </span> </li>
+            <li><span class="rectangle"></span>Android app using Kotlin,<span style="color: brown;" > IIT Bombay </span> </li>
+            <li><span class="rectangle"></span>PHP and MySQL,<span style="color: brown;" > IIT Bombay </span> </li>
+            <li><span class="rectangle"></span>Cyber Awareness Quiz, Quick Heal </li>
+            <li><span class="rectangle"></span>Cyber Security Awareness (Appreciation), EC-Council </li>
+            <li><span class="rectangle"></span>Cyber Security and Ethical Hacking, Edureka</li>
+        </ul>
+    </section>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+body {
+    margin: 0 10px 0 10px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 20px ;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.summary {
+    color:black;
+    font-size: 17px;
+}
+
+
+h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.details {
+    overflow: hidden;
+}
+
+section {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: O.5px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 15px 15px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+.rectangle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    margin-bottom: 1px;
+    margin-right: 10px;
+}
+
+
+strong {
+    color: rgb(255, 81, 0);
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #dacccc31;
+}
+
+h3 {
+    color: #801a1a;
+    font-size: 18px;
+}
+
+/* .paddingmargin .padding {
+    margin: 0px 0px 0px 1px !important;    
+    padding: 0 5px 0 5px;
+    margin: 5px 2px 0px 0 !important;
+} */
+.paddingmargin .margin {
+    margin: 0px 0px 0px 25px !important;
+}

@@ -1,0 +1,24 @@
+please give just dashboard.php, i'll ask later for dashboard.css, if needed any changes then please let me know anything
+add functionality and or else. Make it interactive and attractive as always do !
+for now don't include header and footer
+
+below username and points
+user Bets : ""
+select Numbrs : "from 1-20" if selected then 
+Display -->
+ Select Lottery Names
+ Selected Numbers from above 
+ Point : On that Points to Bet it should fetch if points are less than then not option to place bet, if points are then yes, if user has points 150 then there should be 50, 100, 150.
+ 
+"until selected numbers & Select lottery Names & Points then DON'T DISPLAY BUTTON PLACE BET"
+
+On press button show details --> Successful or Error reasons
+
+hope you remember our past conversations database related, login.php and register.php, accordingly:
+this is users table "id username email points created_at password";
+this is bets table "id user_id lottery_id bet_number points created_at";
+this is lotteries table "id name launch_date status{active, inactive} created_at image"
+
+
+
+

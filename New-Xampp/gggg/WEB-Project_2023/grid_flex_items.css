@@ -1,0 +1,118 @@
+/*Flexbox*/
+.phones_flex_1, .phones_flex_2 {
+    display: flex; /*using flexbox*/
+    flex-direction: row; /*pe orizontala*/
+    width: 1500px;
+    margin-left: 100px;
+    margin-top: 7%;
+    justify-content: center;
+}
+  
+.phones_flex_1 > div, .phones_flex_2 > div {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 300px;
+    width: 500px;
+    margin: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 10%;
+    border: 7px outset black;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+.phones_flex_1 img, .phones_flex_2 img {
+    object-fit: cover;
+    height: 240px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+@media screen and (orientation: portrait) {
+    .phones_flex_1 {
+        flex-direction: column; /*pe verticala*/
+    }
+    .phones_flex_2 {
+        flex-direction: column;
+    }
+    .messages {
+        grid-auto-flow: column;
+    }
+}
+
+/*Grid*/
+
+.item:nth-child(1) {
+    grid-area: a;
+}
+.item:nth-child(2) {
+    grid-area: b;
+}
+.item:nth-child(3) {
+    grid-area: c;
+}
+.item:nth-child(4) {
+    grid-area: d;
+}
+.item:nth-child(5) {
+    grid-area: e;
+}
+.item:last-child {
+    grid-area: f;
+}
+
+.item {
+    display: flex; /*textul continut de item*/
+    justify-content: center; /*sa fie pozitionat*/
+    align-items: center; /*in mijloc*/
+    background-color: rgba(0, 233, 233, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+    border-radius: 40%;
+    margin: 10px;
+}
+
+/*'1fr' reprezinta o fractie din spatiul ramas in grid.*/
+.messages {
+    width: 75%;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 8%;
+    display: grid;
+    gap: 100px 200px; /*distance between grid items (rows and columns)*/
+    grid-template-columns: repeat(3, 1fr);  /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(3, 1fr);  /*1fr 1fr 1fr*/
+    grid-template-areas: /*Functioneaza DOAR cu div tags!!!*/
+                        "a . ."
+                        "b c ."
+                        "d e f";
+    padding: 10px;
+    /*background-color:rgb(68, 68, 68);*/
+}
+.messages > .item::before {
+    content: '!'; /*simbolul adaugat inaintea fiecarui item*/
+    color:rgb(255, 35, 35);
+    font-weight: 900;
+    font-size: 2.5rem; /*2.5 * Marimea fontului elementului radacina.*/
+    margin-right: 0.5rem; /*0.5 * Marimea fontului elementului radacina.*/
+    font-style: normal;
+    font-family: sans-serif;
+}
+.item > span:first-of-type {
+    font-style: normal;
+    margin-left: 7px;
+}
+
+

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Additional styling for post content */
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styling for the header */
+header {
+    background-color: #405de6;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* Styling for main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for individual posts */
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add more styles as needed for a more Instagram-like appearance */

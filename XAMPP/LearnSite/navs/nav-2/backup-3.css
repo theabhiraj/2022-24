@@ -1,0 +1,53 @@
+/* Add these styles to your existing style.css or create a new stylesheet */
+
+.courses {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid #a8a0a0;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #a8a0a0; /* Add a background color for better visibility */
+}
+
+.course {
+    text-align: center;
+    width: calc(20% - 20px); /* Adjust the width as needed */
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    border: 2px solid #b33333;
+    overflow: hidden;
+    position: relative;
+    background-color: #d4cbcb; /* Add a background color for each course */
+    border-radius: 10px; /* Add border radius for a rounded look */
+    padding: 15px; /* Add padding for better spacing */
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.course h3 {
+    margin-top: 15px; /* Adjust the top margin for better spacing */
+    font-size: 18px; /* Increase the font size for better visibility */
+    color: #333;
+}
+
+.course:hover {
+    outline: 2px solid #3498db;
+    transform: scale(1.05);
+}
+
+.course:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .course {
+        width: calc(33.33% - 20px); /* Adjust the width for smaller screens */
+    }
+}

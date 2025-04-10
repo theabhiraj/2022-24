@@ -1,0 +1,34 @@
+Home Page (index.php):
+
+This will be the first page users see, so it needs to be engaging and informative. It should include an overview of the lottery system, links to registration, login, and any active lotteries.
+Registration Page (register.php):
+
+Users need to register to participate in lotteries. This page should include a form to capture user details and create an account.
+Login Page (login.php):
+
+This page will allow existing users to log into the system. It should include fields for username and password.
+Lottery Listings Page (lotteries.php):
+
+This page will display all available lotteries. Users can browse, view details, and select lotteries they wish to participate in.
+Lottery Details Page (lotteryDetails.php):
+
+When a user clicks on a specific lottery, this page will show detailed information, including rules, prizes, and the option to participate.
+User Dashboard (dashboard.php):
+
+Once logged in, users should have access to a dashboard where they can see their points, lotteries they've entered, and any winnings.
+Profile Page (profile.php):
+
+Users should have a page where they can view and update their profile information.
+Logout Page (logout.php):
+
+This will handle user logout functionality, ensuring they are securely logged out of the system.
+Summary:
+
+index.php
+register.php -->Came back 
+login.php --> Came back
+lotteries.php -- Came back
+lotteryDetails.php  --> Cancelled
+dashboard.php --> Came back
+profile.php
+logout.php

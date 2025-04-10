@@ -1,0 +1,148 @@
+@keyframes slogan-animation {
+    from {
+        color: bisque;
+    }
+    to {
+        color: red;
+    }
+}
+
+#slogan {
+    animation: slogan-animation 10s ease-in-out infinite alternate; /*tranziția are aceași viteză de la început la sfârșit*/
+}
+
+@keyframes bk-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+body {
+    color:beige;
+    height: 100vh;
+    width: 100vw;
+    /*background: linear-gradient(60deg, darkgrey, rgb(88, 1, 1), rgb(46, 0, 0));*/
+    background: linear-gradient(60deg, rgb(0, 82, 163), rgb(0, 103, 138), rgb(88, 69, 126), rgb(37, 10, 61)); /*multiple culori pozitionate la 60 de grade*/
+    animation: bk-animation 20s infinite alternate; /*20s duration, alternating for smoother effect when finished the transition (which runs forever)*/
+    background-size: 10000px; /*marim mult background-ul pentru a putea aplica animatia definita mai sus*/
+}
+
+header {
+    position: absolute;
+    top: 25px;
+    right: 7%;
+    height: 10%;
+    width: 20%;
+    cursor: pointer; /*se schimba cursorul la pointer(ca si cum am putea da click pe elementul respectiv)*/
+}
+
+.title {
+    color:tomato;
+    transition: 1.7s;
+    transition-timing-function: ease-in; /*tranzitia incepe mai lent si se termina mai rapid*/
+}
+header:hover .title { /*se aplica doar pe .title, cand dam hover pe header*/
+    color:aqua;
+}
+
+#title {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+#mobile_tech_im {
+    border-radius: 50%;
+    margin-left: 11%;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    border: 5px solid black;
+}
+
+@media screen and (orientation: portrait) { /*se aplica atunci cand width < height in webpage (ca la pozele default din telefon)*/
+    #title {
+        display: none;
+    }
+}
+@media all and (max-width: 850px) {
+    #mobile_tech_im {
+        display: none;
+    }
+    body {
+        color: black;
+    }
+    header > h1 {
+        visibility: hidden;
+    }
+    #greatest:nth-child(1) {
+        visibility: hidden;
+    }
+    .drop_down #ordered_list_1 {
+        visibility: hidden;
+    }
+    #drop_down_menu_1 {
+        visibility: hidden;
+    }
+}
+@media all and (max-height: 850px) {
+    #mobile_tech_im {
+        display: none;
+    }
+    body {
+        color: black;
+    }
+    header > h1 {
+        visibility: hidden;
+    }
+    #greatest:nth-child(1) {
+        visibility: hidden;
+    }
+    .drop_down #ordered_list_1 {
+        visibility: hidden;
+    }
+    #drop_down_menu_1 {
+        visibility: hidden;
+    }
+}
+/**/
+.drop_down {
+    font-size: xx-large;
+    position: absolute;
+    top: 36%;
+    left: 68%;
+    cursor: pointer;
+}
+#ordered_list_1 > li {
+    color:rgba(10, 10, 10, 0.9);
+    font-style: italic;
+    margin-top: 20px;
+    margin-left: 140px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.drop_down #ordered_list_1 {
+    
+    border-radius: 50%; /*elementul ce reprezinta lista ordonata va fi rotund*/
+    background-color:rgba(255, 127, 80, 0.7);
+    border: 7px outset black; /*border with mixed colors*/
+    width: 480px;
+    list-style-type: none;
+    position: absolute;
+    padding-bottom: 20px;
+}
+#ordered_list_1 {
+    display: none;
+}
+.drop_down:active #ordered_list_1 { /*cat timp tinem apasat click-stanga pe mouse este afisata lista*/
+    display: block;
+}
+
+#greatest::first-letter {
+    color: gold;
+    font-size: 150%;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, white, darkgrey, grey, rgb(51, 51, 51));
+}
+  
+.container {
+    width: 350px;
+    margin: 200px auto; /*center the container in the page*/
+    background-color: #dfdede;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*alpha = transperency index*/
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="submit"] { /*Login button*/
+    margin-top: 30px;
+    width: 100%;
+    background-color:rgb(100, 114, 78);
+    color:aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.8s;
+    transition-timing-function: ease-out; /*tranzitia se va termina mai lent*/
+}
+
+input[type="submit"]:hover {
+    background-color:green;
+}
+
+/*manipulating the user input data*/
+.message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+/*Link to another page to add certain people*/
+#add_people > h4 {
+    font-size: larger;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color:rgb(46, 46, 46);
+}
+
+#add_people a {
+    font-style: normal;
+    font-weight: 700;
+}
+
+#add_people span {
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    color:rgb(31, 100, 228);
+}
+.rand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+

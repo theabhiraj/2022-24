@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Operators</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <section class="sub-header">
+        <nav class="sub-nav">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo"></a>
+            <div class="sub-nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="introduction.html" class="nav-link">Introduction</a></li>
+                    <li><a href="variable.html" class="nav-link">Variable</a></li>
+                    <li><a href="datatypes.html" class="nav-link">Data Types</a></li>
+                    <li><a href="operators.html" class="nav-link">Operators</a></li>
+                    <li><a href="lists.html" class="nav-link">Lists</a></li>
+                    <li><a href="tuples.html" class="nav-link">Tuples</a></li>
+                    <li><a href="sets.html" class="nav-link">Sets</a></li>
+                    <li><a href="dictionaries.html" class="nav-link">Dictionaries</a></li>
+                    <li><a href="if-else.html" class="nav-link">if...else</a></li>
+                    <li><a href="while-loop.html" class="nav-link">While Loops</a></li>
+                    <li><a href="for-loop.html" class="nav-link">For Loops</a></li>
+                    <li><a href="functions.html" class="nav-link">Functions</a></li>
+                    <li><a href="lambda.html" class="nav-link">Lambda</a></li>
+                    <li><a href="class-object.html" class="nav-link">Class - Object</a></li>
+                    <li><a href="inheritance.html" class="nav-link">Inheritance</a></li>
+                    <li><a href="iterators.html" class="nav-link">Iterators</a></li>
+                    <li><a href="polymorphism.html" class="nav-link">Polymorphism</a></li>
+                    <li><a href="scope.html" class="nav-link">Scope</a></li>
+                    <li><a href="modules.html" class="nav-link">Modules</a></li>
+                    <li><a href="dates.html" class="nav-link">Dates</a></li>
+                    <li><a href="math.html" class="nav-link">Math</a></li>
+                    <li><a href="json.html" class="nav-link">JSON</a></li>
+                    <li><a href="regex.html" class="nav-link">RegEx</a></li>
+                    <li><a href="pip.html" class="nav-link">PIP</a></li>
+                    <li><a href="try_except.html" class="nav-link">Try Except</a></li>
+                    <li><a href="user-input.html" class="nav-link">User Input</a></li>
+                    <li><a href="stringformatting.html" class="nav-link">String Formatting</a></li>
+                </ul>
+            </div>
+            <div class="head-nav-links">
+                <a class="nav-link" href="index.html">Home</a></li>
+                <a class="nav-link" href="abot.html">About</a></li>
+                <a class="" href="#courses">Course</a></li>
+                <a class="nav-link" href="blog.html">Blog</a></li>
+                <a class="nav-link" href="contact.html">Contact</a></li>
+            </div>
+            <i class="fa-solid fa-bars" id="faBars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+    <div class="others">
+        <!-- -----------courses--------------- -->
+        <section class="course">
+            <h1>Python Operators</h1>
+            <br>
+            <hr><br>
+            <div class="con">
+
+                <h2>What are Operators ?</h2>
+                <p>
+                    Operators in Python are symbols that perform operations on operands. They are fundamental to programming as they allow you to manipulate and work with data. 
+                </p>
+                
+                <hr class="course-hr">
+
+                <h3>Arithmetic Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Arithmetic Operators : </b>  Perform basic mathematical operations.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>addition = 10 + 5
+subtraction = 10 - 5
+multiplication = 10 * 5
+division = 10 / 5
+modulus = 10 % 3
+exponentiation = 10 ** 2</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Comparison Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Comparison Operators : </b>  Compare values and return Boolean results.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>equal = (5 == 5)
+not_equal = (10 != 5)
+greater_than = (10 > 5)
+less_than = (10 < 5)
+greater_than_equal = (10 >= 10)
+less_than_equal = (10 <= 5)</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Assignment Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Assignment Operators : </b>  Assign values to variables.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>x = 10
+                        y += 5  # Equivalent to y = y + 5
+                        z *= 2  # Equivalent to z = z * 2</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Logical Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Logical Operators : </b>Combine Boolean values and return Boolean results.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>logical_and = (True and False)
+logical_or = (True or False)
+logical_not = not True</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Logical Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Logical Operators : </b>Combine Boolean values and return Boolean results.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>logical_and = (True and False)
+logical_or = (True or False)
+logical_not = not True</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Identity Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Identity Operators : </b> Compare the memory location of two objects.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>a = [1, 2, 3]
+b = [1, 2, 3]
+is_equal = (a is b)  # False
+is_not_equal = (a is not b)  # True</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Membership Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Membership Operators : </b> Test whether a value is a member of a sequence.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>my_list = [1, 2, 3]
+in_list = (2 in my_list)  # True
+not_in_list = (4 not in my_list)  # True</code></pre>
+                </div>
+
+                <hr class="course-hr">
+
+                <div class="sub-heading-con">
+                    <h3>Bitwise Operators :</h3>
+                <div class="sub-heading-con">
+                    <p class="p2">
+                        <b> Bitwise Operators : </b> Perform bitwise operations on integers.
+                    </p>
+                    <p><b> Example : </b></p>
+                    <pre><code>bitwise_and = 10 & 5
+bitwise_or = 10 | 5
+bitwise_xor = 10 ^ 5
+bitwise_not = ~10
+left_shift = 10 << 2
+right_shift = 10 >> 2</code></pre>
+                </div>
+<p>These operators are fundamental for performing various operations and comparisons in Python. Understanding how to use them effectively is crucial for writing expressive and functional code.</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr class="custom-hr">
+        <!-- ----call to action---- -->
+        <section class="cta">
+            <h1>Enroll for our online Live course <br> Anywhere from the World !<br></h1>
+            <a href="" class="hero-btn">CONTACT US<a>
+        </section>
+        <hr class="custom-hr2">
+        <!-- ----Footer---- -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Connect Us !</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+        </section>
+        <hr class="custom-hline">
+
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var faBars = document.getElementById("faBars");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            faBars.style.display = "none";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            faBars.style.display = "block";
+        }
+    </script>
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // Get all links
+        const links = document.querySelectorAll('.nav-link');
+
+        // Remove 'active' class from all links
+        links.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Loop through each link and check if it matches the current path
+        links.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            if (linkPath === path) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

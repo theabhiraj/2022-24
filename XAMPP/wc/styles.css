@@ -1,0 +1,29 @@
+nav a:hover {
+    background-color: #e29f22;
+    color: #000;
+}
+section {
+    padding: 20px;
+}
+#courses {
+    padding-bottom: 20px;margin-bottom: 20px;overflow: auto;
+}
+.course {
+    border: 1px solid #ddd;border-radius: 5px;margin: 10px;padding: 10px;background-color: #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);float: left;width: calc(25% - 20px);box-sizing: border-box;margin-bottom: 20px;overflow: auto;
+}
+.course img {
+    max-width: 100px;height: auto;
+}
+
+.course h2 {
+    color: #333;
+}
+
+.price {
+    color: #e44d26;font-weight: bold;
+}
+
+@media (max-width: 1108px){.course{width: calc(25% - 20px);}/*.header h1{font-size: 5%;}*/}
+@media (max-width: 972px){.course{width: calc(33.33% - 20px);}/*.header h1{font-size: 5%;}*/}
+@media (max-width: 600px){.course{width: calc(50% - 20px);}/*.header h1{font-size: 5%;}*/}
+@media (max-width: 400px){.course{width: calc(100% - 20px);}/*.header h1{font-size: 5%;}*/}
